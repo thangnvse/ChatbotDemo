@@ -1,5 +1,3 @@
-# F500.SU8 ChatBot
-
 # CHATBOT SETUP
 
 ## Download and install tools
@@ -8,9 +6,6 @@
 - [Git](https://git-scm.com/downloads).
 - [Yarn](https://yarnpkg.com/en/docs/install#windows-stable).
 
-Or download from SVN: 
-````
-https://fhn-svn01.fsoft.com.vn/svn/F500.SU8.BizskyMessenger/trunk/users/cuongnt8/setup-tools
 ````
 ## Configuration (prerequisite)
 - To ensure EOF is LF, run the command:
@@ -53,7 +48,7 @@ npm test
 # Git Flow
 - Step 1: Clone source code
 ```bash
-git clone https://git3.fsoft.com.vn/fsoft/F500ChatBot.git
+git clone https://github.com/thangnvse/ChatbotDemo.git
 ```
 - Step 2: Change working directory to F500.ChatBot
 ```
@@ -65,16 +60,16 @@ git flow init
 ```
 - Step 4: Create new feature branch to develop
 ```
-git flow feature start F500S1M35CB-1000
+git flow feature start Login
 ```
-*** Note: *** change `F500S1M35CB-1000` to your task id
+*** Note: *** change `Login` to your task id
 - Step 5: After coding is done, commit and push source code
 ```
 git add .
 git commit -m "message to describe commiting code"
-git push origin feature/F500S1M35CB-1000
+git push origin feature/Login
 ```
-*** Note: *** change `F500S1M35CB-1000` to your task id
+*** Note: *** change `Login` to your task id
 - Step 6: merge develop before create Pull Request
 ```
 git pull origin develop
@@ -91,6 +86,6 @@ git merge --abort
 ```
 - Step 7: Push source to origin after finish merging.
 ```
-git push origin feature/F500S1M35CB-1000
+git push origin feature/Login
 ```
 - Step 8: Create Pull Request in GitLab
